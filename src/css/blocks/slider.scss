@@ -1,0 +1,145 @@
+.section-slider {
+    position: relative;
+    // background: url('../../img/decor/blueberry.png') right bottom -40% no-repeat;
+    background-color: #f8faf9;
+    z-index: 90;
+    display: flex;
+
+    &:before {
+        content: url('../img/decor/blueberry.png');
+        position: absolute;
+        right: 0%;
+        top: 73%;
+        width: rem(196px);
+        height: rem(453px);
+
+        // z-index: 100;
+    }
+
+}
+
+// .slider__wrap {
+//     display: flex;
+// }
+
+.container--slider {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .bx-wrapper {
+        box-shadow: none;
+        border: 0;
+        background: transparent;
+    }
+}
+
+.slider__elem {
+    display: flex;
+
+    @include tablets() {
+        flex-direction: column;
+    }
+}
+
+.slider__img {
+    width: 100%;
+    margin-right: rem(60px);
+}
+
+.slider-pic {
+    width: 100%;
+    margin-right: rem(60px);
+    margin-top: 18%;
+
+    @include tablets() {
+        margin: 0 auto;
+        width: rem(370px);
+        height: rem(337px);
+        margin-bottom: rem(10px);
+    }
+
+}
+
+.slider__content {
+    display: flex;
+    flex-direction: column;
+
+    @include tablets() {
+        align-items: center;
+    }
+}
+
+.slider__title {
+    color: #000000;
+    font-size: rem(36px);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: rem(12px);
+    line-height: 1;
+
+    @include tablets() {
+        font-size: rem(30px);
+        text-align: center;
+    }
+}
+
+.slider__desc {
+    display: flex;
+    flex-direction: column;
+
+    @include tablets() {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.slider__desc-text {
+    width: 80%;
+    margin-bottom: rem(30px);
+
+    @include tablets() {
+        width: 72%;
+        margin-bottom: rem(15px);
+    }
+}
+
+
+.slider__desc-about {
+    display: flex;
+    margin-bottom: rem(27px);
+
+    @include tablets() {
+        margin-bottom: rem(33px);
+    }
+}
+
+
+.slider__calories {
+    margin-right: rem(47px);
+}
+
+.slider__desc-total {
+    display: flex;
+    align-items: center;
+}
+
+.slider__cost {
+    width: rem(118px);
+    height: rem(36px);
+    display: flex;
+    align-items: center;
+    margin-right: rem(27px);
+}
+
+.cost {
+    color: #151515;
+    font-size: rem(60px);
+    font-weight: 300;
+    line-height: rem(60px);
+    text-transform: uppercase;
+}
+
+.value {
+    max-height: 100%;
+}

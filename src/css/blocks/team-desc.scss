@@ -1,0 +1,40 @@
+.team__desc {
+    flex-direction: column;
+    align-items: center;
+    // display: none;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    transition: height .3s;
+    z-index: 1500;
+
+    span {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+.team__desc--tablet {
+    position: inherit;
+}
+
+.team__desc-title {
+    color: #000000;
+    text-align: center;
+}
+
+.activ__triangle {
+    transform: rotate(180deg);
+}
+
+.team__desc-img {
+    display: none;
+    // height: 0;
+}
+
+.team__desc-img--eee {
+    display: flex;
+}

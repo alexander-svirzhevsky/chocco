@@ -1,0 +1,39 @@
+.slider__ingredient {
+    padding-bottom: rem(23px);
+
+    @include tablets() {
+        display: none;
+    }
+}
+
+.composition {
+    text-decoration: none;
+    position: relative;
+
+    &:hover {
+        background-color: #60aacc;
+    }
+
+    &:hover .composition-list {
+        display: flex;
+
+    }
+
+    width: rem(85px);
+    height: rem(85px);
+    background-color: #86c3d7;
+    border-radius: 7px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+    transition: background-color .5s;
+}
+
+.list-img {
+    width: rem(35px);
+    height: rem(32px);
+}

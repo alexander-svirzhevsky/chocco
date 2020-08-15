@@ -1,0 +1,32 @@
+.modal {
+    display: none;
+    padding: 29px;
+    text-align: center;
+}
+
+.fancybox-content {
+    background: #fff;
+    display: inline-block;
+    text-align: center !important;
+    margin: 0;
+    max-width: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 44px !important;
+    position: relative;
+    text-align: left;
+    vertical-align: middle;
+}
+
+
+.modal__content {
+    margin-bottom: 30px !important;
+}
+
+.input-error {
+    border-color: red;
+}
+
+.error-modal {
+    color: red;
+}

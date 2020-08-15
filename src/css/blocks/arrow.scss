@@ -1,0 +1,39 @@
+.arrow {
+    position: absolute;
+
+    @include tablets() {
+        top: 35%;
+    }
+}
+
+.arrow-img {
+    width: 13px;
+    height: 28px;
+}
+
+.arrow-img--left {
+    transform: rotateY(180deg);
+    left: -2%;
+
+
+    @include tablets() {
+        left: 2%;
+        z-index: 200;
+    }
+
+    // @include phones() {
+    //     left: 2%;
+    // }
+}
+
+.arrow-img--right {
+    right: -2%;
+
+    @include tablets() {
+        right: 2%;
+    }
+
+    // @include phones() {
+    //     right: 2%;
+    // }
+}

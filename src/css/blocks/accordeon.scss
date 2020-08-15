@@ -1,0 +1,110 @@
+.section-accordeon {
+    background: url("../img/background/back.png"), #000;
+    // background-repeat: no-repeat;// background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.accordeon__list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+}
+
+.accordeon__item {
+    display: flex;
+    height: 100%;
+}
+
+.accordeon__title-menu {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    color: #ffffff;
+    font-size: rem(48px);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.accordeon__text {
+    max-width: rem(630px);
+    background-color: rgba(51, 53, 55, .93);
+    position: relative;
+    height: 100%;
+    display: flex;
+    padding: rem(75px) rem(90px) rem(100px) rem(27px);
+
+    p {
+        color: #ffffff;
+        font-size: rem(16px);
+        min-width: rem(400px);
+
+        @include tablets () {
+            min-width: calc(100vw - 376px);
+        }
+
+        @include phones () {
+            min-width: calc(100vw - 300px);
+        }
+
+    }
+
+}
+
+.accordeon__active {
+    display: flex;
+    width: rem(100px);
+    background-position: left bottom;
+    background-size: cover;
+    text-decoration: none;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: rem(40px);
+    background-color: #000;
+
+    @include phones() {
+        width: rem(80px);
+    }
+}
+
+.accordeon__title {
+    color: #ffffff;
+    font-size: rem(48px);
+    font-weight: 700;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    width: 100%;
+}
+
+.accordeon__close {
+    fill: rgba(255, 255, 255, .7);
+    position: absolute;
+    top: 2%;
+    right: 7%;
+}
+
+.accordeon__close-img {
+    width: rem(18px);
+    height: rem(18px);
+}
+
+.accordeon__wrap {
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.accordeon__item-active .accordeon__wrap {
+    width: rem(500px);
+
+
+    @include tablets() {
+        width: calc(100vw - 316px);
+    }
+
+    @include phones() {
+        width: calc(100vw - 240px);
+    }
+}

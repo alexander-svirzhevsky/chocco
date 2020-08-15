@@ -1,0 +1,100 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-size: $baseFontSize;
+
+    @include tablets {
+        font-size: $baseFontSize - 1px;
+
+        body.lock {
+            overflow: hidden;
+        }
+    }
+
+    @include phones {
+        font-size: $baseFontSize - 6px;
+    }
+}
+
+
+.scroll-off {
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif;
+    line-height: 1.42;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    color: #666666;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    // min-width: 0px;
+    height: 100%;
+    // min-height: 100%;
+    overflow: hidden;
+}
+
+.maincontent {
+    height: 100%;
+    transition: transform 1s;
+    will-change: transform;
+}
+
+.container {
+    // width: $containerWidth;
+    width: 95%;
+    max-width: $containerWidth;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    font-weight: normal;
+}
+
+.tabel {
+    border-collapse: collapse;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+        list-style: none;
+    }
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}

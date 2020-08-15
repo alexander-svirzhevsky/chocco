@@ -1,0 +1,9 @@
+.form__btns {
+    margin-top: rem(39px);
+
+    @include tablets() {
+        display: flex;
+        justify-content: center;
+        margin-top: rem(34px);
+    }
+}

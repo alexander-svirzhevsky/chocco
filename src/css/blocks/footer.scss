@@ -1,0 +1,38 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: rem(22px) 0;
+    background: #fff;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include phones() {
+        flex-direction: column;
+    }
+}
+
+.contacts {
+    font-style: normal;
+
+    @include phones() {
+        margin-bottom: rem(15px);
+    }
+}
+
+.contacts__place {
+    color: #000000;
+}
+
+.phone--green {
+    color: $green;
+}
+
+.phone__icon--green {
+    fill: $green;
+}

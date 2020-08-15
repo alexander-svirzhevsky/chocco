@@ -1,0 +1,82 @@
+.radio {
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+    margin-right: rem(24px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.form__control {
+    display: flex;
+    margin-bottom: rem(8px);
+
+    @include phones() {
+        justify-content: center;
+    }
+}
+
+.radio__elem {
+    display: none;
+
+    &:checked~.radio__vesible {
+        &:before {
+            display: block;
+        }
+    }
+}
+
+.radio__vesible {
+    width: rem(26px);
+    height: rem(26px);
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: relative;
+    margin-right: rem(8px);
+
+    &:before {
+        content: "";
+        height: rem(12px);
+        width: rem(12px);
+        background-color: #365a49;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        display: none;
+    }
+
+    &--checkbox {
+        border-radius: 0;
+
+        &:before {
+            background-image:
+                url("data:image/svg+xml;utf8,<svg viewBox='0 0 10.9 8.7' xmlns='http://www.w3.org/2000/svg'><path fill='%23365a49' d='M10.3,0.6L10.3,0.6C9.6-0.2,8.4-0.2,7.7,0.5L4,4.2L3.2,3.4c-0.7-0.7-1.9-0.7-2.6,0L0.5,3.4 c-0.7, 0.7-0.7, 1.9, 0, 2.6l2.2, 2.2C3.1, 8.6, 3.6, 8.7, 4, 8.7c0.5, 0, 0.9-0.2, 1.3-0.5l5-5C11, 2.5, 11, 1.3, 10.3, 0.6z'/></svg>");
+            // background: url("../img/decor/check.png") center center no-repeat;
+            background-position: center center no-repeat;
+            background-repeat: no-repeat;
+            background-color: transparent;
+            border-radius: 0;
+        }
+    }
+}
+
+// .radio__vesible-check {
+//     width: rem(26px);
+//     height: rem(26px);
+//     background-color: #ffffff;
+//     border-radius: 0;
+//     position: relative;
+//     margin-right: rem(8px);
+
+
+//     &:before {
+//         background-image:
+//             url("data:image/svg+xml;utf8,<svg viewBox='0 0 10.9 8.7' xmlns='http://www.w3.org/2000/svg'><path d='M10.3,0.6L10.3,0.6C9.6-0.2,8.4-0.2,7.7,0.5L4,4.2L3.2,3.4c-0.7-0.7-1.9-0.7-2.6,0L0.5,3.4 c-0.7, 0.7-0.7, 1.9, 0, 2.6l2.2, 2.2C3.1, 8.6, 3.6, 8.7, 4, 8.7c0.5, 0, 0.9-0.2, 1.3-0.5l5-5C11, 2.5, 11, 1.3, 10.3, 0.6z'/></svg>");
+//         // background: url("../img/decor/check.png") center center no-repeat;
+//         background-position: center center no-repeat;
+//     }
+// }

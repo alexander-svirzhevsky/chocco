@@ -1,0 +1,75 @@
+.gains {
+    display: flex;
+    position: relative;
+
+    @include phones() {
+        flex-direction: column;
+        text-align: left;
+    }
+}
+
+.gains-section {
+    position: relative;
+}
+
+.gains__item {
+    flex: 1;
+    padding: 0 3%;
+    position: relative;
+
+    &:before {
+        position: absolute;
+        content: url("../img/decor/vector.png");
+        top: rem(50px);
+        right: 0;
+        transform: translateX(50%);
+    }
+
+    &:first-child {
+        padding-left: 0;
+    }
+
+    &:last-child {
+        padding-right: 0;
+
+        &:before {
+            display: none;
+        }
+    }
+
+    @include phones() {
+        &::before {
+            display: none;
+        }
+
+        display: flex;
+        justify-content: flex-end;
+        padding: 0;
+        margin-bottom: 7%;
+    }
+}
+
+.gains-section {
+    position: relative;
+    background: url("../img/decor/list.png") left center no-repeat;
+
+    &:before {
+        content: url("../img/decor/crunch.png");
+        position: absolute;
+        bottom: rem(-120px);
+        left: 0;
+        z-index: 100;
+    }
+
+    @include tablets() {
+        background-position: 0 10%;
+    }
+
+    @include phones() {
+        background: none;
+
+        &::before {
+            display: none;
+        }
+    }
+}

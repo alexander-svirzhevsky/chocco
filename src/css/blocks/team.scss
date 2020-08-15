@@ -1,0 +1,63 @@
+.team-desktop {
+    display: flex;
+    justify-content: center;
+
+    @include tablets() {
+        display: none;
+    }
+}
+
+
+.section-team {
+    position: relative;
+
+    &:before {
+        content: url('../img/decor/alone.png');
+        position: absolute;
+        left: 4%;
+        top: 94%;
+        z-index: 100;
+        width: rem(104px);
+        height: rem(114px);
+    }
+}
+
+.team__person {
+    margin-right: rem(20px);
+    // min-height: rem(406.42px);
+
+    // @include tablets() {
+    //     min-height: 100%;
+    // }
+}
+
+.team__link {
+    text-decoration: none;
+    margin-top: rem(18px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team__name {
+    color: #000000;
+    font-size: rem(21px);
+    font-weight: 700;
+    margin-right: rem(4px);
+}
+
+.triangle {
+    border-top: 7px solid #365a49;
+    border-bottom: 0px;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.team-img {
+    max-width: 100%;
+}
+
+.team__person {
+    flex: 1;
+    position: relative;
+}

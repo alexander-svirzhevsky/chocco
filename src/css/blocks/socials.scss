@@ -1,0 +1,19 @@
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.social__item {
+    margin-right: rem(20px);
+}
+
+.social__img {
+    width: rem(20px);
+    height: rem(20px);
+    opacity: 0.3;
+    transition: opacity .5s;
+
+    &:hover {
+        opacity: 1;
+    }
+}

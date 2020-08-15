@@ -1,0 +1,25 @@
+.about {
+    display: flex;
+
+    @include tablets () {
+        display: none;
+    }
+}
+
+.icon {
+    margin-right: rem(9px);
+    width: rem(45px);
+    height: rem(40px);
+    fill: #c6f7ff
+}
+
+.about__item {
+    display: flex;
+    margin-right: rem(37px);
+
+    .about__item-text {
+        max-width: rem(84px);
+        font-size: rem(16px);
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,33 @@
+.interective-avatar__img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.interective-avatar {
+    width: rem(80px);
+    height: rem(80px);
+    // border: 6px solid $green;
+    border: 6px solid transparent;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+
+    &:hover {
+        border-color: $green;
+    }
+
+    &--active {
+        border-color: $green;
+    }
+}
+
+.interective-avatar__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+}

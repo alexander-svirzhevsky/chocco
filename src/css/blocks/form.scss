@@ -1,0 +1,115 @@
+.section-form {
+    background: url("../img/background/pattern.png") center center / 100%;
+    position: relative;
+
+    &:after {
+        content: url('../img/decor/berrie-2.png');
+        position: absolute;
+        top: 72%;
+        left: 10%;
+    }
+
+    @include tablets() {
+
+        &::after,
+        &::before {
+            display: none;
+        }
+    }
+}
+
+.container--form {
+    position: relative;
+
+    &::before {
+        content: url('../img/decor/list4.png');
+        top: 65%;
+        right: -13%;
+        position: absolute;
+        width: rem(135px);
+        height: rem(188px);
+        z-index: 10;
+    }
+
+    @include tablets() {
+
+        &::before {
+            display: none;
+        }
+
+    }
+}
+
+.form {
+    display: flex;
+
+    @include tablets() {
+        flex-direction: column;
+        padding: 0 18%;
+    }
+
+    @include phones() {
+        padding: 0;
+    }
+}
+
+.form__col {
+    flex: 1;
+    margin-right: rem(20px);
+    z-index: 50;
+
+    @include tablets() {
+        margin-right: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.form__row {
+    display: flex;
+    margin-bottom: rem(18px);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include tablets() {
+        margin-bottom: rem(13px);
+    }
+}
+
+.form__block {
+    flex: 1;
+    margin-right: rem(20px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.form__input {
+    width: 100%;
+    padding: rem(18px) rem(11px);
+    border: none;
+    border: 3px solid transparent;
+
+    &:focus {
+        border-color: #dee2bd;
+        outline: none;
+    }
+
+    &--area {
+        height: rem(180px);
+        resize: none;
+    }
+
+    @include tablets() {
+        padding: rem(7px) rem(7px);
+
+        &--area {
+            height: rem(80px);
+        }
+    }
+}

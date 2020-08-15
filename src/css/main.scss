@@ -1,0 +1,64 @@
+// @import "../css/base/*.scss";
+
+
+// @import "base/normalize";
+// @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap");
+
+// @import url(https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap);
+
+@import "base/variables.scss";
+@import "base/media.scss";
+@import "base/layout.scss";
+
+@import "blocks/*.scss";
+// // font
+
+//  sectio-one
+@import "blocks/hero";
+@import "blocks/header";
+@import "blocks/about";
+@import "blocks/btn";
+@import "blocks/menu-fixed";
+
+// section-two
+@import "blocks/section";
+@import "blocks/headline.scss";
+@import "blocks/gains";
+@import "blocks/gain";
+
+// section-three
+@import "blocks/reviews";
+@import "blocks/avatar-check";
+
+// section-four
+@import "blocks/form";
+@import "blocks/radio";
+@import "blocks/btns-form";
+
+// footer
+@import "blocks/map";
+@import "blocks/footer";
+@import "blocks/socials";
+
+// hamburger
+@import "blocks/hamburger";
+
+// slider
+@import "blocks/slider";
+@import "blocks/composition";
+@import "blocks/ingredient";
+@import "blocks/arrow";
+
+// team
+@import "blocks/team";
+@import "blocks/team-desc";
+@import "blocks/team_tablets";
+
+// modal
+@import "blocks/modal";
+
+// accordeon 
+@import "blocks/accordeon";
+
+// player
+@import "blocks/player";
